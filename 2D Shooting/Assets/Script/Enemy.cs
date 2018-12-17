@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
         if (coll.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
+            GameManager.score += 100;
         }
     }
 }
