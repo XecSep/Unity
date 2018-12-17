@@ -58,9 +58,9 @@ public class Player : MonoBehaviour
 
     private void Fire()
     {
-        if(canShoot==true)
+        if (canShoot == true)
         {
-            if(attackTimer > attackDelay)
+            if (attackTimer > attackDelay)
             {
                 if (Input.GetMouseButton(0))
                     StartCoroutine(this.CreateBullet());
