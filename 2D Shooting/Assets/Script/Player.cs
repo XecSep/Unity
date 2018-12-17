@@ -1,21 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    // Horizontal
-    private float h = 0.0f;
-    // Vertical
-    private float v = 0.0f;
-
     private Transform tr;
     // 총알
     public GameObject bullet;
     // 총알 발사좌표
     public Transform firePos;
 
+    // Horizontal
+    private float h = 0.0f;
+    // Vertical
+    private float v = 0.0f;
+
     public float moveSpeed = 10.0f;
+
+    // 발사 유무
+    public bool canShoot = true;
+    // 공격 딜레이
+    public float attackDelay = 0.1f;
+    float attackTimer = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +35,7 @@ public class Player : MonoBehaviour
     {
         Move();
 
-        if(Input.GetMouseButton(0))
-        {
-            Fire();
-        }
+        Fire();
     }
 
     private void Move()
@@ -54,7 +58,17 @@ public class Player : MonoBehaviour
 
     private void Fire()
     {
-        StartCoroutine(this.CreateBullet());
+        if(canShoot==true)
+        {
+            if(attackTimer > attackDelay)
+            {
+                if (Input.GetMouseButton(0))
+                    StartCoroutine(this.CreateBullet());
+
+                attackTimer = 0;
+            }
+            attackTimer += Time.deltaTime;
+        }
     }
 
     IEnumerator CreateBullet()
