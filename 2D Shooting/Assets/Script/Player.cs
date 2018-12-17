@@ -41,6 +41,15 @@ public class Player : MonoBehaviour
 
         tr.Translate(Vector2.right * moveSpeed * h * Time.deltaTime, Space.Self);
         tr.Translate(Vector2.up    * moveSpeed * v * Time.deltaTime, Space.Self);
+
+        // 월드좌표를 뷰포트좌표로 바꾼다. 
+        Vector2 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+        // 0~1값으로 제한한다.
+        viewPos.x = Mathf.Clamp01(viewPos.x);
+        viewPos.y = Mathf.Clamp01(viewPos.y);
+        // 뷰포트좌표를 월드좌표로 바꾼다.
+        Vector2 worldPos = Camera.main.ViewportToWorldPoint(viewPos);
+        transform.position = worldPos;
     }
 
     private void Fire()
