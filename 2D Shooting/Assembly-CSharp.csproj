@@ -65,6 +65,7 @@
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\SceneManager.cs" />
     <Compile Include="Assets\Script\SpawnManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/kij43/Documents/GitHub/Unity/2D Shooting/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

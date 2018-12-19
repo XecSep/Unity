@@ -25,9 +25,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         // 비활성화
         readyText.SetActive(false);
         StartCoroutine(ShowReady());
+        */
+
     }
 
     // Update is called once per frame
