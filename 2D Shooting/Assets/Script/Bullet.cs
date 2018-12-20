@@ -7,7 +7,11 @@ public class Bullet : MonoBehaviour
     private Transform tr;
 
     public float moveSpeed = 10.0f;
-    public float destroyTime = 0.2f;
+
+    /*
+    // 활성화
+    public bool enabled = true;
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +24,7 @@ public class Bullet : MonoBehaviour
     {
         Move();
 
-        Destroy();
+        //Destroy();
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -31,13 +35,15 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    /*
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+    */
+
     private void Move()
     {
         tr.Translate(Vector2.up * moveSpeed * Time.deltaTime, Space.Self);
-    }
-
-    private void Destroy()
-    {
-        Destroy(gameObject, destroyTime);
     }
 }
