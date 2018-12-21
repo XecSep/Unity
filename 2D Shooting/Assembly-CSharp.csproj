@@ -62,7 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\BackGround.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
-    <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\Enemy\Cheller.cs" />
+    <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\SceneManager.cs" />
