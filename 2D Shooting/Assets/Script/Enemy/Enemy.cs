@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private Transform tr;
+
+    public float moveSpeed = 4.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        tr = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Move();
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -23,5 +27,12 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             GameManager.score += 100;
         }
+    }
+
+    
+
+    private void Move()
+    {
+        tr.Translate(Vector2.down * moveSpeed * Time.deltaTime, Space.Self);
     }
 }
