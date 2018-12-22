@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 5141
+  controlID: 5867
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 5076
+  controlID: 5850
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,8 +309,8 @@ MonoBehaviour:
     y: 0
     width: 398
     height: 987
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 9}
   m_Panes:
   - {fileID: 9}
@@ -347,7 +347,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 86efffff58f0fffffcf7ffffd4fbffff
+      m_ExpandedIDs: 7ceaffffaaeaffffd4fbffff5c0c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -434,8 +434,7 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/External file/FourKing/1.Canna
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -447,7 +446,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 002e0000
     m_LastClickedID: 11776
-    m_ExpandedIDs: ffffffff00000000760900007c0900009c090000040a0000260a00002a0a0000640a00007a0a0000de0a0000ee0a0000120b0000240b0000300b00003e0b00006c0b00005629000058290000
+    m_ExpandedIDs: ffffffff00000000760900007c0900009c090000040a0000260a00002a0a0000640a00007a0a0000de0a0000ee0a0000120b0000240b0000300b00003e0b00006c0b0000682900006a2900004a2e0000522e00005a2e0000f02f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,7 +474,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000760900007c0900009c090000040a0000260a00002a0a0000640a00007a0a0000de0a0000ee0a0000120b0000240b0000300b00003e0b00006c0b00005629000058290000
+    m_ExpandedIDs: ffffffff00000000760900007c0900009c090000040a0000260a00002a0a0000640a00007a0a0000de0a0000ee0a0000120b0000240b0000300b00003e0b00006c0b0000682900006a2900004a2e0000522e00005a2e0000f02f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

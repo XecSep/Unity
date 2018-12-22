@@ -29,8 +29,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
-
     private void Move()
     {
         tr.Translate(Vector2.down * moveSpeed * Time.deltaTime, Space.Self);
