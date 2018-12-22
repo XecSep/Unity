@@ -38,6 +38,14 @@ public class Player : MonoBehaviour
         Fire();
     }
 
+    private void OnTriggerEnter(Collider coll)
+    {
+        if (coll.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Move()
     {
         h = Input.GetAxis("Horizontal");
