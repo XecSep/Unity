@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider coll)
     {
-        if (coll.gameObject.tag == "Enemy")
+        if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "Bullet_Enemy")
         {
             Destroy(gameObject);
         }
@@ -82,6 +82,16 @@ public class Player : MonoBehaviour
     IEnumerator CreateBullet()
     {
         Instantiate(bullet, firePos.position, firePos.rotation);
+
+        /*
+         * null:                        다음 프레임까지 대기
+         * new WaitForseconds(float):   지정된 초 만큼 대기
+         * new WaitForFixedUpdate():    다음 물리 프레임까지 대기
+         * new WaitForEndOfFrame():     모든 렌더링 작업이 끝날 때까지 대기
+         * StartCoRoutine(string):      다른 코루틴이 끝날 때까지 대기
+         * new WWW(string):             웹 통신 작업이 끝날 때까지 대기
+         * new AsyncOperation:          비동기 작업이 끝날 떄까지 대기(씬로딩)
+         */
         yield return null;
     }
 }

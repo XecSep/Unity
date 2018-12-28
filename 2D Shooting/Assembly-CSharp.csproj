@@ -61,7 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\BackGround.cs" />
-    <Compile Include="Assets\Script\Bullet.cs" />
+    <Compile Include="Assets\Script\Bullet\Bullet_Enemy_Cheller.cs" />
+    <Compile Include="Assets\Script\Bullet\Bullet_Player.cs" />
     <Compile Include="Assets\Script\Enemy\1.Canna\Cheller.cs" />
     <Compile Include="Assets\Script\Enemy\1.Canna\Juju.cs" />
     <Compile Include="Assets\Script\Enemy\1.Canna\Yadon.cs" />

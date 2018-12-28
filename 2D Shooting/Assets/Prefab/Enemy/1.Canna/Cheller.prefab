@@ -98,7 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66900554649676a48b3fad90fcb75e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  bullet: {fileID: 4925626622698434397, guid: 83609bea0a750c14993205ffa769569e, type: 3}
+  firePos: {fileID: 334910471}
+  canShoot: 1
+  attackDelay: 1
 --- !u!1 &411022247
 GameObject:
   m_ObjectHideFlags: 0
